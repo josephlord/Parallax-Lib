@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import CoreMotion
 //import math
 
 private struct ParallaxObject {
@@ -15,12 +16,20 @@ private struct ParallaxObject {
     var  zPosition : CGFloat
 }
 
-
-let roll:CGFloat = 0.3
-let pitch:CGFloat = 0.8
-
-public class ParallaxController {
+public class ParallaxController : AttitudeManagerDelegate {
+    private var devicePos =  CMDeviceMotion()
     private var objects = [ParallaxObject]()
+    private let attitudeMan: AttitudeManager = AttitudeManager.sharedInstance
+    init() {
+        attitudeMan.delegate = self
+        attitudeMan.start()
+    }
+    
+    public func didReceiveMotionUpdate(motion: CMDeviceMotion) {
+        devicePos = motion
+        dispatch_async(dispatch_get_main_queue()) { self.updateAllTransforms() }
+        
+    }
     
     public func addObject(object:UIView, zPosition: CGFloat) {
         let po = ParallaxObject(object: object, zPosition:zPosition)
@@ -30,7 +39,8 @@ public class ParallaxController {
     
     private func updateTransform(po:ParallaxObject) {
         //        var cappedPitch = max(pitch, 0.25*M_PI)
-        
+        let pitch = (CGFloat)(devicePos.attitude.pitch)
+        let roll = (CGFloat)(devicePos.attitude.roll)
         let transform = CGAffineTransformMakeTranslation(roll * po.zPosition, pitch * po.zPosition)
         po.object.transform = transform
     }
