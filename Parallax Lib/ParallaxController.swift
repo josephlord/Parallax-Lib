@@ -17,7 +17,9 @@ private struct ParallaxObject {
 }
 
 public class ParallaxController : AttitudeManagerDelegate {
-    private var devicePos =  CMDeviceMotion()
+    //private var devicePos =  CMDeviceMotion()
+    var currentPitch:CGFloat = 0
+    var currentRoll:CGFloat = 0
     private var objects = [ParallaxObject]()
     private let attitudeMan: AttitudeManager = AttitudeManager.sharedInstance
     init() {
@@ -25,10 +27,13 @@ public class ParallaxController : AttitudeManagerDelegate {
         attitudeMan.start()
     }
     
-    public func didReceiveMotionUpdate(motion: CMDeviceMotion) {
-        devicePos = motion
-        dispatch_async(dispatch_get_main_queue()) { self.updateAllTransforms() }
-        
+    public func didReceiveMotionUpdate(roll: Double, pitch: Double, yaw: Double) {
+        if(CGFloat(roll) != currentRoll || CGFloat(pitch) != currentPitch) {
+            dispatch_async(dispatch_get_main_queue()) {
+                self.currentPitch = CGFloat(pitch)
+                self.currentRoll  = CGFloat(roll)
+                self.updateAllTransforms() }
+        }
     }
     
     public func addObject(object:UIView, zPosition: CGFloat) {
@@ -39,9 +44,7 @@ public class ParallaxController : AttitudeManagerDelegate {
     
     private func updateTransform(po:ParallaxObject) {
         //        var cappedPitch = max(pitch, 0.25*M_PI)
-        let pitch = (CGFloat)(devicePos.attitude.pitch)
-        let roll = (CGFloat)(devicePos.attitude.roll)
-        let transform = CGAffineTransformMakeTranslation(roll * po.zPosition, pitch * po.zPosition)
+        let transform = CGAffineTransformMakeTranslation(currentRoll * po.zPosition, currentPitch * po.zPosition)
         po.object.transform = transform
     }
     

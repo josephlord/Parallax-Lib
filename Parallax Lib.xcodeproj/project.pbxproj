@@ -16,8 +16,8 @@
 		BE75530519E3165400CEA22D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE75530319E3165400CEA22D /* LaunchScreen.xib */; };
 		BE75531119E3165400CEA22D /* Example_ApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE75531019E3165400CEA22D /* Example_ApplicationTests.swift */; };
 		BE75531C19E31B8600CEA22D /* ParallaxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE75531819E3183200CEA22D /* ParallaxController.swift */; };
-		BE75531F19E324EE00CEA22D /* AttitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE75531E19E324EE00CEA22D /* AttitudeManager.swift */; };
-		BE75532019E3280800CEA22D /* AttitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE75531E19E324EE00CEA22D /* AttitudeManager.swift */; };
+		BE75532219E32B9100CEA22D /* AttitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE75532119E32B9100CEA22D /* AttitudeManager.swift */; };
+		BE75532319E32B9100CEA22D /* AttitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE75532119E32B9100CEA22D /* AttitudeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		BE75530F19E3165400CEA22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE75531019E3165400CEA22D /* Example_ApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_ApplicationTests.swift; sourceTree = "<group>"; };
 		BE75531819E3183200CEA22D /* ParallaxController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxController.swift; sourceTree = "<group>"; };
-		BE75531E19E324EE00CEA22D /* AttitudeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttitudeManager.swift; sourceTree = "<group>"; };
+		BE75532119E32B9100CEA22D /* AttitudeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttitudeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +108,7 @@
 		BE7552DB19E3156500CEA22D /* ParallaxLib */ = {
 			isa = PBXGroup;
 			children = (
-				BE75531E19E324EE00CEA22D /* AttitudeManager.swift */,
+				BE75532119E32B9100CEA22D /* AttitudeManager.swift */,
 				BE7552DE19E3156500CEA22D /* Parallax Lib.h */,
 				BE7552DC19E3156500CEA22D /* Supporting Files */,
 				BE75531819E3183200CEA22D /* ParallaxController.swift */,
@@ -348,7 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE75531F19E324EE00CEA22D /* AttitudeManager.swift in Sources */,
+				BE75532219E32B9100CEA22D /* AttitudeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +367,7 @@
 				BE75531C19E31B8600CEA22D /* ParallaxController.swift in Sources */,
 				BE7552FD19E3165400CEA22D /* ViewController.swift in Sources */,
 				BE7552FB19E3165400CEA22D /* AppDelegate.swift in Sources */,
-				BE75532019E3280800CEA22D /* AttitudeManager.swift in Sources */,
+				BE75532319E32B9100CEA22D /* AttitudeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
