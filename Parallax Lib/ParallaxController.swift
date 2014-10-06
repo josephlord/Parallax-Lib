@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Foundation
+//import math
 
 private struct ParallaxObject {
     let object : UIView
@@ -27,6 +29,8 @@ public class ParallaxController {
     }
     
     private func updateTransform(po:ParallaxObject) {
+        //        var cappedPitch = max(pitch, 0.25*M_PI)
+        
         let transform = CGAffineTransformMakeTranslation(roll * po.zPosition, pitch * po.zPosition)
         po.object.transform = transform
     }
