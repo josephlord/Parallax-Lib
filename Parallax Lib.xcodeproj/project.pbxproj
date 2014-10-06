@@ -16,6 +16,8 @@
 		BE75530519E3165400CEA22D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE75530319E3165400CEA22D /* LaunchScreen.xib */; };
 		BE75531119E3165400CEA22D /* Example_ApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE75531019E3165400CEA22D /* Example_ApplicationTests.swift */; };
 		BE75531C19E31B8600CEA22D /* ParallaxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE75531819E3183200CEA22D /* ParallaxController.swift */; };
+		BE75532219E32B9100CEA22D /* AttitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE75532119E32B9100CEA22D /* AttitudeManager.swift */; };
+		BE75532319E32B9100CEA22D /* AttitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE75532119E32B9100CEA22D /* AttitudeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,10 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BE7552D919E3156500CEA22D /* Parallax Lib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Parallax Lib.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE7552D919E3156500CEA22D /* Parallax Lib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Parallax Lib.framework"; path = ParallaxLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7552DD19E3156500CEA22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE7552DE19E3156500CEA22D /* Parallax Lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Parallax Lib.h"; sourceTree = "<group>"; };
-		BE7552E419E3156500CEA22D /* Parallax LibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Parallax LibTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE7552E419E3156500CEA22D /* Parallax LibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Parallax LibTests.xctest"; path = ParallaxLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7552E719E3156500CEA22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE7552E819E3156500CEA22D /* Parallax_LibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parallax_LibTests.swift; sourceTree = "<group>"; };
 		BE7552F619E3165400CEA22D /* Example Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +48,7 @@
 		BE75530F19E3165400CEA22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE75531019E3165400CEA22D /* Example_ApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_ApplicationTests.swift; sourceTree = "<group>"; };
 		BE75531819E3183200CEA22D /* ParallaxController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxController.swift; sourceTree = "<group>"; };
+		BE75532119E32B9100CEA22D /* AttitudeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttitudeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,7 @@
 		BE7552DB19E3156500CEA22D /* ParallaxLib */ = {
 			isa = PBXGroup;
 			children = (
+				BE75532119E32B9100CEA22D /* AttitudeManager.swift */,
 				BE7552DE19E3156500CEA22D /* Parallax Lib.h */,
 				BE7552DC19E3156500CEA22D /* Supporting Files */,
 				BE75531819E3183200CEA22D /* ParallaxController.swift */,
@@ -344,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE75532219E32B9100CEA22D /* AttitudeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +367,7 @@
 				BE75531C19E31B8600CEA22D /* ParallaxController.swift in Sources */,
 				BE7552FD19E3165400CEA22D /* ViewController.swift in Sources */,
 				BE7552FB19E3165400CEA22D /* AppDelegate.swift in Sources */,
+				BE75532319E32B9100CEA22D /* AttitudeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
