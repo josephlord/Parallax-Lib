@@ -9,7 +9,23 @@
 /* Begin PBXBuildFile section */
 		BE7552DF19E3156500CEA22D /* Parallax Lib.h in Headers */ = {isa = PBXBuildFile; fileRef = BE7552DE19E3156500CEA22D /* Parallax Lib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE7552E919E3156500CEA22D /* Parallax_LibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7552E819E3156500CEA22D /* Parallax_LibTests.swift */; };
+		BE7552FB19E3165400CEA22D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7552FA19E3165400CEA22D /* AppDelegate.swift */; };
+		BE7552FD19E3165400CEA22D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7552FC19E3165400CEA22D /* ViewController.swift */; };
+		BE75530019E3165400CEA22D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7552FE19E3165400CEA22D /* Main.storyboard */; };
+		BE75530219E3165400CEA22D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE75530119E3165400CEA22D /* Images.xcassets */; };
+		BE75530519E3165400CEA22D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE75530319E3165400CEA22D /* LaunchScreen.xib */; };
+		BE75531119E3165400CEA22D /* Example_ApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE75531019E3165400CEA22D /* Example_ApplicationTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE75530B19E3165400CEA22D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE7552D019E3156500CEA22D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE7552F519E3165400CEA22D;
+			remoteInfo = "Example Application";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BE7552D919E3156500CEA22D /* Parallax Lib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Parallax Lib.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -18,6 +34,16 @@
 		BE7552E419E3156500CEA22D /* Parallax LibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Parallax LibTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7552E719E3156500CEA22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE7552E819E3156500CEA22D /* Parallax_LibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parallax_LibTests.swift; sourceTree = "<group>"; };
+		BE7552F619E3165400CEA22D /* Example Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE7552F919E3165400CEA22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE7552FA19E3165400CEA22D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE7552FC19E3165400CEA22D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE7552FF19E3165400CEA22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE75530119E3165400CEA22D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BE75530419E3165400CEA22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BE75530A19E3165400CEA22D /* Example ApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Example ApplicationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE75530F19E3165400CEA22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE75531019E3165400CEA22D /* Example_ApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_ApplicationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +61,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE7552F319E3165400CEA22D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE75530719E3165400CEA22D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -43,6 +83,8 @@
 			children = (
 				BE7552DB19E3156500CEA22D /* Parallax Lib */,
 				BE7552E519E3156500CEA22D /* Parallax LibTests */,
+				BE7552F719E3165400CEA22D /* Example Application */,
+				BE75530D19E3165400CEA22D /* Example ApplicationTests */,
 				BE7552DA19E3156500CEA22D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +94,8 @@
 			children = (
 				BE7552D919E3156500CEA22D /* Parallax Lib.framework */,
 				BE7552E419E3156500CEA22D /* Parallax LibTests.xctest */,
+				BE7552F619E3165400CEA22D /* Example Application.app */,
+				BE75530A19E3165400CEA22D /* Example ApplicationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +130,44 @@
 			isa = PBXGroup;
 			children = (
 				BE7552E719E3156500CEA22D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE7552F719E3165400CEA22D /* Example Application */ = {
+			isa = PBXGroup;
+			children = (
+				BE7552FA19E3165400CEA22D /* AppDelegate.swift */,
+				BE7552FC19E3165400CEA22D /* ViewController.swift */,
+				BE7552FE19E3165400CEA22D /* Main.storyboard */,
+				BE75530119E3165400CEA22D /* Images.xcassets */,
+				BE75530319E3165400CEA22D /* LaunchScreen.xib */,
+				BE7552F819E3165400CEA22D /* Supporting Files */,
+			);
+			path = "Example Application";
+			sourceTree = "<group>";
+		};
+		BE7552F819E3165400CEA22D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE7552F919E3165400CEA22D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE75530D19E3165400CEA22D /* Example ApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE75531019E3165400CEA22D /* Example_ApplicationTests.swift */,
+				BE75530E19E3165400CEA22D /* Supporting Files */,
+			);
+			path = "Example ApplicationTests";
+			sourceTree = "<group>";
+		};
+		BE75530E19E3165400CEA22D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE75530F19E3165400CEA22D /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -139,6 +221,41 @@
 			productReference = BE7552E419E3156500CEA22D /* Parallax LibTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BE7552F519E3165400CEA22D /* Example Application */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE75531219E3165400CEA22D /* Build configuration list for PBXNativeTarget "Example Application" */;
+			buildPhases = (
+				BE7552F219E3165400CEA22D /* Sources */,
+				BE7552F319E3165400CEA22D /* Frameworks */,
+				BE7552F419E3165400CEA22D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Example Application";
+			productName = "Example Application";
+			productReference = BE7552F619E3165400CEA22D /* Example Application.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE75530919E3165400CEA22D /* Example ApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE75531519E3165400CEA22D /* Build configuration list for PBXNativeTarget "Example ApplicationTests" */;
+			buildPhases = (
+				BE75530619E3165400CEA22D /* Sources */,
+				BE75530719E3165400CEA22D /* Frameworks */,
+				BE75530819E3165400CEA22D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE75530C19E3165400CEA22D /* PBXTargetDependency */,
+			);
+			name = "Example ApplicationTests";
+			productName = "Example ApplicationTests";
+			productReference = BE75530A19E3165400CEA22D /* Example ApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -154,6 +271,13 @@
 					BE7552E319E3156500CEA22D = {
 						CreatedOnToolsVersion = 6.0.1;
 					};
+					BE7552F519E3165400CEA22D = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					BE75530919E3165400CEA22D = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = BE7552F519E3165400CEA22D;
+					};
 				};
 			};
 			buildConfigurationList = BE7552D319E3156500CEA22D /* Build configuration list for PBXProject "Parallax Lib" */;
@@ -162,6 +286,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = BE7552CF19E3156500CEA22D;
 			productRefGroup = BE7552DA19E3156500CEA22D /* Products */;
@@ -170,6 +295,8 @@
 			targets = (
 				BE7552D819E3156500CEA22D /* Parallax Lib */,
 				BE7552E319E3156500CEA22D /* Parallax LibTests */,
+				BE7552F519E3165400CEA22D /* Example Application */,
+				BE75530919E3165400CEA22D /* Example ApplicationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -183,6 +310,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BE7552E219E3156500CEA22D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE7552F419E3165400CEA22D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE75530019E3165400CEA22D /* Main.storyboard in Resources */,
+				BE75530519E3165400CEA22D /* LaunchScreen.xib in Resources */,
+				BE75530219E3165400CEA22D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE75530819E3165400CEA22D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -207,7 +351,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE7552F219E3165400CEA22D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE7552FD19E3165400CEA22D /* ViewController.swift in Sources */,
+				BE7552FB19E3165400CEA22D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE75530619E3165400CEA22D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE75531119E3165400CEA22D /* Example_ApplicationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE75530C19E3165400CEA22D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE7552F519E3165400CEA22D /* Example Application */;
+			targetProxy = BE75530B19E3165400CEA22D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE7552FE19E3165400CEA22D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE7552FF19E3165400CEA22D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE75530319E3165400CEA22D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE75530419E3165400CEA22D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BE7552EA19E3156500CEA22D /* Debug */ = {
@@ -355,6 +543,64 @@
 			};
 			name = Release;
 		};
+		BE75531319E3165400CEA22D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Example Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BE75531419E3165400CEA22D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Example Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BE75531619E3165400CEA22D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Example ApplicationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example Application.app/Example Application";
+			};
+			name = Debug;
+		};
+		BE75531719E3165400CEA22D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Example ApplicationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example Application.app/Example Application";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -380,6 +626,22 @@
 			buildConfigurations = (
 				BE7552F019E3156500CEA22D /* Debug */,
 				BE7552F119E3156500CEA22D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BE75531219E3165400CEA22D /* Build configuration list for PBXNativeTarget "Example Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE75531319E3165400CEA22D /* Debug */,
+				BE75531419E3165400CEA22D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BE75531519E3165400CEA22D /* Build configuration list for PBXNativeTarget "Example ApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE75531619E3165400CEA22D /* Debug */,
+				BE75531719E3165400CEA22D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
