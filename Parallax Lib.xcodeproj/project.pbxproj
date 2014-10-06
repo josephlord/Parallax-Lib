@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05820A7519E31FEB00F87325 /* AttitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05820A7419E31FEB00F87325 /* AttitudeManager.swift */; };
 		BE7552DF19E3156500CEA22D /* Parallax Lib.h in Headers */ = {isa = PBXBuildFile; fileRef = BE7552DE19E3156500CEA22D /* Parallax Lib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE7552E919E3156500CEA22D /* Parallax_LibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7552E819E3156500CEA22D /* Parallax_LibTests.swift */; };
 		BE7552FB19E3165400CEA22D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7552FA19E3165400CEA22D /* AppDelegate.swift */; };
@@ -28,7 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BE7552D919E3156500CEA22D /* Parallax Lib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Parallax Lib.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05820A7419E31FEB00F87325 /* AttitudeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttitudeManager.swift; sourceTree = "<group>"; };
+		BE7552D919E3156500CEA22D /* Parallax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Parallax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7552DD19E3156500CEA22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE7552DE19E3156500CEA22D /* Parallax Lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Parallax Lib.h"; sourceTree = "<group>"; };
 		BE7552E419E3156500CEA22D /* Parallax LibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Parallax LibTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,7 +94,7 @@
 		BE7552DA19E3156500CEA22D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BE7552D919E3156500CEA22D /* Parallax Lib.framework */,
+				BE7552D919E3156500CEA22D /* Parallax.framework */,
 				BE7552E419E3156500CEA22D /* Parallax LibTests.xctest */,
 				BE7552F619E3165400CEA22D /* Example Application.app */,
 				BE75530A19E3165400CEA22D /* Example ApplicationTests.xctest */,
@@ -143,6 +145,7 @@
 				BE75530119E3165400CEA22D /* Images.xcassets */,
 				BE75530319E3165400CEA22D /* LaunchScreen.xib */,
 				BE7552F819E3165400CEA22D /* Supporting Files */,
+				05820A7419E31FEB00F87325 /* AttitudeManager.swift */,
 			);
 			path = "Example Application";
 			sourceTree = "<group>";
@@ -186,9 +189,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		BE7552D819E3156500CEA22D /* Parallax Lib */ = {
+		BE7552D819E3156500CEA22D /* Parallax */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BE7552EC19E3156500CEA22D /* Build configuration list for PBXNativeTarget "Parallax Lib" */;
+			buildConfigurationList = BE7552EC19E3156500CEA22D /* Build configuration list for PBXNativeTarget "Parallax" */;
 			buildPhases = (
 				BE7552D419E3156500CEA22D /* Sources */,
 				BE7552D519E3156500CEA22D /* Frameworks */,
@@ -199,9 +202,9 @@
 			);
 			dependencies = (
 			);
-			name = "Parallax Lib";
+			name = Parallax;
 			productName = "Parallax Lib";
-			productReference = BE7552D919E3156500CEA22D /* Parallax Lib.framework */;
+			productReference = BE7552D919E3156500CEA22D /* Parallax.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BE7552E319E3156500CEA22D /* Parallax LibTests */ = {
@@ -293,7 +296,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BE7552D819E3156500CEA22D /* Parallax Lib */,
+				BE7552D819E3156500CEA22D /* Parallax */,
 				BE7552E319E3156500CEA22D /* Parallax LibTests */,
 				BE7552F519E3165400CEA22D /* Example Application */,
 				BE75530919E3165400CEA22D /* Example ApplicationTests */,
@@ -355,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05820A7519E31FEB00F87325 /* AttitudeManager.swift in Sources */,
 				BE7552FD19E3165400CEA22D /* ViewController.swift in Sources */,
 				BE7552FB19E3165400CEA22D /* AppDelegate.swift in Sources */,
 			);
@@ -613,13 +617,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BE7552EC19E3156500CEA22D /* Build configuration list for PBXNativeTarget "Parallax Lib" */ = {
+		BE7552EC19E3156500CEA22D /* Build configuration list for PBXNativeTarget "Parallax" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE7552ED19E3156500CEA22D /* Debug */,
 				BE7552EE19E3156500CEA22D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE7552EF19E3156500CEA22D /* Build configuration list for PBXNativeTarget "Parallax LibTests" */ = {
 			isa = XCConfigurationList;
@@ -628,6 +633,7 @@
 				BE7552F119E3156500CEA22D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE75531219E3165400CEA22D /* Build configuration list for PBXNativeTarget "Example Application" */ = {
 			isa = XCConfigurationList;
@@ -636,6 +642,7 @@
 				BE75531419E3165400CEA22D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE75531519E3165400CEA22D /* Build configuration list for PBXNativeTarget "Example ApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -644,6 +651,7 @@
 				BE75531719E3165400CEA22D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

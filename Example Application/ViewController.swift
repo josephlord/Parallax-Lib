@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import CoreMotion
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AttitudeManagerDelegate {
 
+    @IBOutlet var rotX: UILabel!
+    @IBOutlet var rotY: UILabel!
+    @IBOutlet var rotZ: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        AttitudeManager.sharedInstance.delegate = self
+        AttitudeManager.sharedInstance.start()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +29,10 @@ class ViewController: UIViewController {
     }
 
 
+    func didReceiveMotionUpdate(motion: CMDeviceMotion) {
+        rotX.text = "\(motion.attitude.roll)"
+        rotY.text = "\(motion.attitude.pitch)"
+        rotZ.text = "\(motion.attitude.yaw)"
+    }
 }
 
