@@ -29,10 +29,10 @@ class ViewController: UIViewController, AttitudeManagerDelegate {
     }
 
 
-    func didReceiveMotionUpdate(motion: CMDeviceMotion) {
-        rotX.text = "\(motion.attitude.roll)"
-        rotY.text = "\(motion.attitude.pitch)"
-        rotZ.text = "\(motion.attitude.yaw)"
+    func didReceiveMotionUpdate(roll: Double, pitch:Double, yaw:Double) {
+        rotX.text = "\(roll)"
+        rotY.text = "\(pitch)"
+        rotZ.text = "\(yaw)"
     }
 }
 
