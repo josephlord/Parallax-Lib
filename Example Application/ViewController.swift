@@ -7,12 +7,20 @@
 //
 
 import UIKit
+//import ParallaxLib
 
 class ViewController: UIViewController {
 
+    @IBOutlet var redView: UIView!
+    @IBOutlet var blueView: UIView!
+    let parallaxCont = ParallaxController()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        parallaxCont.addObject(redView, zPosition: -20)
+        parallaxCont.addObject(blueView, zPosition: 20)
+        
     }
 
     override func didReceiveMemoryWarning() {

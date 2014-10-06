@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BE7552D819E3156500CEA22D"
-               BuildableName = "Parallax Lib.framework"
-               BlueprintName = "Parallax Lib"
+               BuildableName = "ParallaxLib.framework"
+               BlueprintName = "ParallaxLib"
                ReferencedContainer = "container:Parallax Lib.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE7552D819E3156500CEA22D"
-            BuildableName = "Parallax Lib.framework"
-            BlueprintName = "Parallax Lib"
+            BuildableName = "ParallaxLib.framework"
+            BlueprintName = "ParallaxLib"
             ReferencedContainer = "container:Parallax Lib.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -61,8 +61,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE7552D819E3156500CEA22D"
-            BuildableName = "Parallax Lib.framework"
-            BlueprintName = "Parallax Lib"
+            BuildableName = "ParallaxLib.framework"
+            BlueprintName = "ParallaxLib"
             ReferencedContainer = "container:Parallax Lib.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

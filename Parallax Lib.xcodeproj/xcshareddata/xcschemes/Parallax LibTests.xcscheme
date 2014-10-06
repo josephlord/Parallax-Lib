@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BE7552E319E3156500CEA22D"
-               BuildableName = "Parallax LibTests.xctest"
-               BlueprintName = "Parallax LibTests"
+               BuildableName = "ParallaxLibTests.xctest"
+               BlueprintName = "ParallaxLibTests"
                ReferencedContainer = "container:Parallax Lib.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BE7552E319E3156500CEA22D"
-               BuildableName = "Parallax LibTests.xctest"
-               BlueprintName = "Parallax LibTests"
+               BuildableName = "ParallaxLibTests.xctest"
+               BlueprintName = "ParallaxLibTests"
                ReferencedContainer = "container:Parallax Lib.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE7552E319E3156500CEA22D"
-            BuildableName = "Parallax LibTests.xctest"
-            BlueprintName = "Parallax LibTests"
+            BuildableName = "ParallaxLibTests.xctest"
+            BlueprintName = "ParallaxLibTests"
             ReferencedContainer = "container:Parallax Lib.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE7552E319E3156500CEA22D"
-            BuildableName = "Parallax LibTests.xctest"
-            BlueprintName = "Parallax LibTests"
+            BuildableName = "ParallaxLibTests.xctest"
+            BlueprintName = "ParallaxLibTests"
             ReferencedContainer = "container:Parallax Lib.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -80,8 +80,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE7552E319E3156500CEA22D"
-            BuildableName = "Parallax LibTests.xctest"
-            BlueprintName = "Parallax LibTests"
+            BuildableName = "ParallaxLibTests.xctest"
+            BlueprintName = "ParallaxLibTests"
             ReferencedContainer = "container:Parallax Lib.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
