@@ -24,6 +24,7 @@ class AttitudeManager
     var averageRoll = 0.0
     var averageYaw = 0.0
     var averagePitch = 0.0
+    let operationQueue = NSOperationQueue()
     
     init() {
         motionManager = CMMotionManager()
@@ -31,7 +32,7 @@ class AttitudeManager
     
     func start() {
         motionManager.deviceMotionUpdateInterval = updateInterval
-        motionManager.startDeviceMotionUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler: {
+        motionManager.startDeviceMotionUpdatesToQueue(operationQueue, withHandler: {
             motion, error in
             if let deviceMotion: CMDeviceMotion = motion
             {
@@ -40,7 +41,9 @@ class AttitudeManager
                 self.smoothedYaw(deviceMotion.attitude.yaw)
                 if let unwrappedDelegate: AttitudeManagerDelegate = self.delegate
                 {
-                    unwrappedDelegate.didReceiveMotionUpdate(self.averageRoll, pitch: self.averagePitch, yaw: self.averageYaw)
+                    dispatch_async(dispatch_get_main_queue(), {
+                        unwrappedDelegate.didReceiveMotionUpdate(self.averageRoll, pitch: self.averagePitch, yaw: self.averageYaw)
+                    })
                 }
             }
         })
